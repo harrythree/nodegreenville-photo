@@ -1,0 +1,15 @@
+<h1>{{title }}</h1>
+
+{{#each photos}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{this.message}}</h3>
+    </div>
+    <div class="panel-body">
+      <img class="img-responsive" src="{{this.url}}"/>
+    </div>
+    <div class="panel-footer">
+      <b>Weather:</b> {{this.weather}} | <b>Temperature:</b> {{this.temp}} | <b>Location:</b> {{this.location}}
+    </div>
+  </div>
+{{/each}}
